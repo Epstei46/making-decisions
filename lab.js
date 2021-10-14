@@ -161,17 +161,24 @@ let z = 5
 //   z--
 // }
 
-let x = z
+// let x = z
 
-while (z > 0){
-  if (x > 0){
-    console.log(x)
-    x  -= 1
-  } else {
-    z -= 1
-    x = z
+// while (z > 0){
+//   if (x > 0){
+//     console.log(x)
+//     x  -= 1
+//   } else {
+//     z -= 1
+//     x = z
+//   }
+// }
+
+// console.log("Was a doozy getting this uploaded.")
+// console.log("Just double checking.")
+
+for (let i = z; i >= 1; i--) {
+  console.log("Outer for loop " + i)
+  for (j = i; j >= 1; j--) {
+    console.log(j)
   }
 }
-
-console.log("Was a doozy getting this uploaded.")
-console.log("Just double checking.")
